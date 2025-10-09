@@ -1,119 +1,160 @@
-![Resume](https://media.tenor.com/F22o7y51j-0AAAAC/we-like-your-resume-job.gif)
+# Resume Parser using Spacy NLP Library with Streamlit Integrated
 
-# _**Resume Parser using Spacy NLP Library with Stream lit Integrated**_
-Resume Analyses has been they’re for decades now, As, having well balanced and aesthetic resume can make or break your career. So, a personalized resume analyser helps us to evaluate and maintain a proper resume which might help us get a job in top MNC’s. In this project we explain you about the tools which helped us to analyse our resume and provide better feedback which can help us to increase the skills which we are lacking and also change the resume pattern which keeps us one step ahead of others.
+Resume analyses have been around for decades now. Having a well-balanced and aesthetic resume can make or break your career. A personalized resume analyzer helps us evaluate and maintain a proper resume that might help us get a job in top MNCs.
+In this project, we explain the tools that help analyze resumes and provide better feedback to increase the skills we are lacking and also change the resume pattern to stay one step ahead of others.
 
-# _**Base Paper**_
-+ https://www.researchgate.net/publication/313851778_Resume_Parser_with_Natural_Language_Processing
+# Base Paper
 
-# _**Methodology**_
+* [Resume Parser with Natural Language Processing](https://www.researchgate.net/publication/313851778_Resume_Parser_with_Natural_Language_Processing)
 
-# **Stream Lit**
-Stream lit is a small and easy web framework which helps us to build beautiful websites. The main reason for using stream lit is that it offers very user-friendly experience and we don’t need to have a prior knowledge of HTML, CSS and JAVASCRIPT. Streamlit is mostly used for deploying machine learning models without using any external cloud integrations. Some of the applications of Streamlit are it helps to deploy Machine learning and dee learning models, it can also help us to build a front end for a normal code. The output can be viewed as local server in your web browser.
+# Methodology
 
-![Lit](https://blog.streamlit.io/content/images/2021/11/Streamlit-Images.png)
+## Streamlit
 
-# **Resume Parser**
-Resume parser is an NLP model which is used to get information from resumes such as details etc. then we have to train the NLP model according to dataset.Resume parsing helps recruiters to efficiently manage electronic resume documents sent electronically.Resume parsers are programs designed to scan the document, analyse it and extract information which are important to recruiters.They are extremely low-cost so that the data present in the resume can be searched, matched and can be displayed by recruiters.
+Streamlit is a small and easy web framework that helps us build beautiful websites.
+The main reason for using Streamlit is its user-friendly interface — no need for prior knowledge of HTML, CSS, or JavaScript.
 
-![Resume](https://www.neurond.com/static/45ee6c3b93a4d8199f149c31e48b2d69/e4e91/neurond-cv-parsing-process.png)
+Streamlit is mostly used for deploying machine learning models without external cloud integrations.
+Some applications include:
 
-**Reference**
+* Deploying ML and DL models
+* Building frontends for Python code
+* Viewing output locally in the browser
 
-+ https://www.geeksforgeeks.org/project-how-to-build-a-resume-parser-using-python/
-+ https://docs.streamlit.io/library/get-started/main-concepts
+## Resume Parser
 
-# _**How to Execute?**_
-So, before execution we have some pre-requisites that we need to download or install i.e., anaconda environment, python and a code editor.
-**Anaconda**: Anaconda is like a package of libraries and offers a great deal of information which allows a data engineer to create multiple environments and install required libraries easy and neat.
+A resume parser is an NLP model used to extract key information from resumes such as personal details, education, experience, and skills.
+We train the NLP model using a dataset to efficiently manage and process resumes sent electronically.
 
-**Download link:**
+Resume parsers scan, analyze, and extract data important to recruiters, allowing them to search and match candidate profiles effectively. They are low-cost and essential for modern HR systems.
 
-![Anaconda](https://1.bp.blogspot.com/-UJ1Ws2zZ9V4/TtMbG2ynJiI/AAAAAAAABbM/m6t2kuEhKdY/s1600/The-biggest-anaconda-snake-3.jpg)
+References
 
-https://www.anaconda.com/
+* [How to Build a Resume Parser using Python – GeeksforGeeks](https://www.geeksforgeeks.org/project-how-to-build-a-resume-parser-using-python/)
+* [Streamlit Documentation](https://docs.streamlit.io/library/get-started/main-concepts)
 
-**Python**: Python is a most popular interpreter programming language, which is used in almost every field. Its syntax is very similar to English language and even children and learning it nowadays, due to its readability and easy syntax and large community of users to help you whenever you face any issues.
+# How to Execute?
 
-**Download link:**
+Before execution, ensure you have the following prerequisites installed:
 
-![Python](https://i0.wp.com/reptileworldfacts.com/wp-content/uploads/2019/05/male-blonde-super-tiger-reticulated-python.jpg?resize=351%2C351&ssl=1)
+* Anaconda
+* Python
+* Code Editor (VS Code or PyCharm)
 
-https://www.python.org/downloads/
+ Anaconda
 
-**Code editor**: Code editor is like a notepad for a programming language which allows user to write, run and execute program which we have written. Along with these some code editors also allows us to debug, which usually allows users to execute the code line by line and allows them to see where and how to solve the errors. But I personally feel visual code is very good to work with any programming language and makes a great deal of attachment with user.
+Anaconda is a package manager that allows data engineers to create multiple environments and install libraries easily.
+Download: [https://www.anaconda.com/](https://www.anaconda.com/)
 
-**Download links:**
+ Python
 
-![Vs code](https://schwabencode.com/contents/logos/VS2019-Badge.png) ![Pycharm](https://i0.wp.com/scracked.com/wp-content/uploads/2020/01/PyCharm-2019.3.4-Crack.png?fit=200%2C200&ssl=1)
+Python is a popular programming language known for its readability and large community support.
+Download: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-+ https://code.visualstudio.com/Download, 
-+ https://www.jetbrains.com/pycharm/download/#section=windows
+ Code Editor
 
-# _**How to create a new environment and configure jupyter notebook with it.**_
-Let us define an environment and why we need different environments. An environment is a collection of libraries that are required to run our project. When we already have an environment with the necessary libraries, why do we need a new environment?
-To avoid version mismatches, we create a new environment for each project. For example, in your previous project, you used "tf env" with tensorflow 2.4 and keras 2.4, but in your current project, you must use tensorflow 2.6 and keras 2.6. If you continue your project in the "tf env" environment, there will be a version mismatch and you will need to update tensorflow and keras, but this will cause problems with the previous project's execution. To avoid this, we create a new environment with tensorflow 2.6 and keras 2.6 and resume our project.
+A code editor allows writing, running, and debugging code efficiently.
+Recommended editors:
 
-# _**How to create an environment in anaconda.**_
-+ Type “conda create –n <<name_of_your_env>>”
-example: conda create -n env
-+ It will ask to proceed with the environment location, type ‘y’ and press enter.
-+ When you press ‘y’, the environment will be created. To activate your environment type conda activate <<your_env_name>> . E.g., conda activate myenv.
-+ You can see that the environment got changed after conda activate myenv line. It changed from “base” to “myenv” which means you are now working in “myenv” environment.
-+ To install a library in your virtual environment type pip install <library_name>.
-e.g., pip install pandas
-+ Instead of installing libraries one by one you can even install by bunch, i.e., we have a txt file called requirements.tx which consists of all the libraries required to proceed with the project, so we can use it.
-+ so, before installing requirements.txt, make sure you are in the specific path where your requirements.txt is located, basically this file is located in the folder where our executable files are located, so we need to move to that directory by following command.
-**cd C:\folder_name**
-+ Here A -> drive, folder name -> path where your executable file is saved
-+ I go to that file path in anaconda using cd command 
-1.	Go to drive where your project file is.
-2.	Go to the path of your project using cd <path>
-3.	Type pip install –r requirements.txt 
-+ And all your required libraries will be downloaded and you can start your project.
-+ But if you want to use jupyter notebook on the new environment you have to set it up for the new environment.
-+ After you have installed all the libraries and created an environment, you need an editor to run the code, that is starting jupyter notebook, as soon as you enter jupyter notebook in the terminal you will definitely get this error. “Jupiter” is not recognized as an internal or external command.
-So, to solve it it we have 2 commands.
-1.	conda install –c conda-forge jupyterlab
-2.	conda install –c anaconda python
-Now you are ready to use jupyter on this environment and start with your project!
+* [Visual Studio Code](https://code.visualstudio.com/Download)
+* [PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
 
-![thanks](https://media1.tenor.com/images/11ae4fcfc41bb9e66a0176fcfc38e695/tenor.gif?itemid=8486985)
-  
-  
-# _**Steps to execute**_
-**Note:** Make sure you have added path while installing the software’s.
+# How to Create a New Environment and Configure Jupyter Notebook
 
-1.	Install the prerequisites/software’s required to execute the code.
-2.	Press windows key and type in anaconda prompt a terminal opens up.
-3.	Before executing the code, we need to create a specific environment which allows us to install the required libraries necessary for our project.
-•	Type conda create -name “env_name”, e.g.: conda create -name project_1
-•	Type conda activate “env_name, e.g.: conda activate project_1
-4.	Make sure you are in the correct path in your terminal, where you have saved your executable file/folder. E.g.: cd A:\project\AI\Completed\project_name, then press enter.
-5.	Install necessary libraries from requirements.txt file provided.
-6.	Run pip install -r requirements.txt or conda install requirements.txt (Requirements.txt is a text file consisting of all the necessary libraries required for executing this python file. If it gives any error while installing libraries, you might need to install them individually.)
-7.	If you want to build your own model for detection, you can go through “lstm.ipynb”. It takes time to build the model from scratch again.
-8.  Type pythonmain.py in your anaconda terminal to get the results.
+An environment is a collection of libraries required for a project.
+Creating separate environments avoids version mismatches between projects.
 
-# _**Data Description**_
-Specifically, no external dataset was used for this project. Some external links have been provided in the code to make a recommendation system which recommends courses to the people who use the application, based on their resume score.
+Example:
 
-![Dataset](https://miro.medium.com/v2/resize:fit:1200/1*c8wR6BtKoF-kG5lqqcI7hA.gif)
+* Project A: TensorFlow 2.4, Keras 2.4
+* Project B: TensorFlow 2.6, Keras 2.6
 
- # _**Issues Faced.**_
-1. We might face an issue while installing specific libraries.
-2. Make sure you have the latest version of python or 3.8, since sometimes it might cause version mismatch.
-3. Adding path to environment variables in order to run python files and anaconda environment in code editor, specifically in visual studio code.
+To prevent conflicts, create a new environment for each project.
 
-# _**Note:**_
-**All the required data hasn't been provided over here. Please feel free to contact me for any issues. You can also download the dataset from the given link below.**
 
-### _**Let’s Connect**_
 
-<a href="https://linkedin.com/in/mudassiruddin21" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="mudassiruddin21" height="30" width="40" /></a>
+ Steps to Create an Environment in Anaconda
 
-![Connect](https://media2.giphy.com/media/l1O6zvqu7O317887HF/source.gif)
+1. Type:
 
-# _**Yes, you now have more knowledge than yesterday, Keep Going.**_
-![Happy](https://media.giphy.com/media/GK7grZYLG7cs0/giphy.gif)
-  
+   ```
+   conda create -n <env_name>
+   ```
+
+   Example:
+
+   ```
+   conda create -n myenv
+   ```
+2. Type `y` to confirm environment creation.
+3. Activate the environment:
+
+   ```
+   conda activate myenv
+   ```
+4. Install required libraries:
+
+   ```
+   pip install <library_name>
+   ```
+5. To install multiple libraries at once:
+
+   ```
+   pip install -r requirements.txt
+   ```
+6. Navigate to the project directory:
+
+   ```
+   cd <project_path>
+   ```
+7. To configure Jupyter Notebook in the new environment:
+
+   ```
+   conda install -c conda-forge jupyterlab
+   conda install -c anaconda python
+   ```
+
+Now Jupyter Notebook will work within your new environment.
+
+# Steps to Execute
+
+Note: Make sure to add the installation path to your system environment variables.
+
+1. Install all required software.
+2. Open Anaconda Prompt.
+3. Create a new environment:
+
+   ```
+   conda create -n project_1
+   conda activate project_1
+   ```
+4. Navigate to the project folder:
+
+   ```
+   cd A:\project\AI\Completed\project_name
+   ```
+5. Install dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+6. To train your own model, use `lstm.ipynb`.
+7. Run the main file:
+
+   ```
+   python main.py
+   ```
+
+# Data Description
+
+No external dataset was used in this project.
+External links in the code are provided to build a recommendation system that suggests courses to users based on their resume score.
+
+# Issues Faced
+
+1. Errors while installing specific libraries.
+2. Python version mismatches (recommended: Python 3.8 or latest).
+3. Missing environment variable paths in editors like VS Code.
+
+
+
